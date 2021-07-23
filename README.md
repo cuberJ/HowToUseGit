@@ -17,7 +17,6 @@
 > 4. [分支操作](#分支操作)
 >    1. [创建分支与分支的效果](#创建分支与分支的效果)
 > 5. 团队协作
-> 6. 常见错误
 
 
 
@@ -56,8 +55,10 @@ git init # 初始化仓库
 然后将这个托管仓库的网址（建议选择git打头的ssh地址，比如当前的这个仓库：git@github.com:cuberJ/HowToUseGit.git）复制，进入git界面，执行命令：
 
 ```shell
-git remote add gitnote git@github.com:cuberJ/HowToUseGit.git
 # gitnote是我对这个链接的一个代号，后面每次提交的时候，就可以不用输入网址，而是通过这个代号直接提交给这个仓库
+git remote add gitnote git@github.com:cuberJ/HowToUseGit.git
+# 如果要查看所有的远程连接代号：
+git remote -v
 ```
 
 添加成功，就可以开始在本地增删改查文件了。
